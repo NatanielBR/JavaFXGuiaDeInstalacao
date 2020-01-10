@@ -1,4 +1,4 @@
-# JavaFXGuiaDeInstalacao
+# Guia De Instalacao do Java FX 
 Um guia para fazer a instalação do JDK do Java e do JavaFX.
 
 Esse guia foi testato no Ubunto 18.03 e usando o Java 11.
@@ -6,12 +6,13 @@ Esse guia foi testato no Ubunto 18.03 e usando o Java 11.
 O mesmo guia, escrito em inglês pode ser encontrado em: https://openjfx.io/openjfx-docs/
 Esse guia é somente uma versão em português do guia acima e com minhas palavras.
 
-Requisitos de Download:
+# Requisitos de Download:
 
 - OpenJDK 11 (Pode usar o jdk do reporsitorio do Ubunto usando sudo apt intall openjdk-11-jdk)
 - SDK 11 do OpenJFX (Obtido nesse link https://gluonhq.com/products/javafx/)
 - JMods 11 do OpenJFX (Obtido no mesmo link acima)
 
+# Organizando os arquivos
 Feito os downloads extraia o SDK e o JMods e junte-os em uma mesma pasta.
 O resultado fica-rá semelhante a essa estrutura:
 
@@ -23,6 +24,8 @@ O resultado fica-rá semelhante a essa estrutura:
 Por fins de estetica e pra digitar menos, renomeie "javafx-jmods-11.0.2" para "jmods",
 usarei esse nome daqui em diante.
 
+# O problema
+
 Caso exeute alguma aplicação feita com o JavaFX (Usarei como exemplo minha aplicação
 Renomear) deverá ocorrer esse erro:
 
@@ -31,6 +34,8 @@ Causada por: java.lang.NoClassDefFoundError: javafx/application/Application
 
 Esse erro indica que não existe a classe Application, isso ocorre pois não existe
 nenhum modulo FX em sua JRE.
+
+# Solução
 
 Para adicioar os modulos nescessarios para executar essa aplicação adcione alguns
 parametros a mais:
