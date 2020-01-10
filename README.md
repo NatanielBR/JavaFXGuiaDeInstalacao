@@ -38,6 +38,7 @@ parametros a mais:
 --module-path javafx-sdk-11.0.2/lib --add-modules=ALL-MODULE-PATH
 
 Em "module-path" informe o local da pasta criado anteriormente.
+
 Em "add-moules" deve ser informado os modulos a ser carregado, separando por virgula.
 Entretando voce pode carregar todos os modulos do caminho especificado colocando
 "ALL-MODULE-PATH".
