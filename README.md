@@ -26,7 +26,7 @@ usarei esse nome daqui em diante.
 
 # O problema
 
-Caso exeute alguma aplicação feita com o JavaFX (Usarei como exemplo minha aplicação
+Caso execute alguma aplicação feita com o JavaFX (Usarei como exemplo minha aplicação
 Renomear) deverá ocorrer esse erro:
 
 Erro: Não foi possível localizar nem carregar a classe principal Main
@@ -53,3 +53,15 @@ O comando java deve ficar assim:
 java --module-path javafx-sdk-11.0.2/lib/ --add-modules=ALL-MODULE-PATH -jar Renomear.jar
 
 E a aplicação java deve ser executada com sucesso!
+
+# JRE com JavaFX
+
+Por praticidade talvez queira ter uma JRE com o JavaFX incluso.
+
+Para criar essa JRE utilize esse comando:
+
+jlink --module-path javafx-sdk-11.0.2/jmods:mods --add-modules ALL-MODULE-PATH --output fx11
+
+Em module-path: Infome a pasta com o SDK e o JMods do JavaFX.
+Em output: Informe a pasta saida onde terá a JRE.
+
