@@ -69,3 +69,8 @@ jlink --module-path javafx-sdk-11.0.2/jmods:mods --add-modules ALL-MODULE-PATH -
 Em module-path: Infome a pasta com o SDK e o JMods do JavaFX.
 Em output: Informe a pasta saida onde terá a JRE.
 
+No caso do Windows, o comando terá uma pequena modificação:
+
+jlink --module-path javafx-sdk-11.0.2/jmods;mods --add-modules ALL-MODULE-PATH --output fx11
+
+A alteração ocorre no parametro module-path, que ao invez de ter um dois-pontos terá um ponto e virgula.
