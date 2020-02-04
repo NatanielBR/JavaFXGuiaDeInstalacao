@@ -17,9 +17,13 @@ Feito os downloads extraia o SDK e o JMods e junte-os em uma mesma pasta.
 O resultado fica-rá semelhante a essa estrutura:
 
   -javafx-sdk-11.0.2
+  
    --javafx-jmods-11.0.2
+   
    --legal
+   
    --lib
+   
    
 Por fins de estetica e pra digitar menos, renomeie "javafx-jmods-11.0.2" para "jmods",
 usarei esse nome daqui em diante.
